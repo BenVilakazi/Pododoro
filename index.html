@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pomodoro</title>
+  <link rel='stylesheet' href='style.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/07b0558508.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <div class='container' id='display-container'>
+      <div id='left-container'>
+        <div class='extra extra-hidden'>Extra Time</div>
+        <div id='timer'>Timer</div>
+        <div id='controls'>
+          <button id="pause-play"><i id="pause-play" class="fas fa-play"></i></button>
+          <button id="reset"><i id="reset" class="fas fa-redo"></i></button>
+        </div>
+      </div>
+      <div id='right-container'>
+        <div class="right-items" id='session'>
+          <h3 class="title" id='session-title'>Session:</h3> 
+          <button class="arrow down" id='session-down'>▼</button>
+          <h3 class='set' id=set-session></h3>
+          <button class="arrow up" id='session-up'>▲</button>
+        </div> 
+        <div class="right-items" id='break'>
+          <div class="title" id='break-title'>Break:</div> 
+          <button class="arrow down" id='break-down'>▼</button>
+          <h3 class='set' id=set-break></h3>
+          <button class="arrow up" id='break-up'>▲</button>
+        </div> 
+        <div class="right-items" id='circles'>
+          <i class="far fa-circle session0"></i> 
+          <i class="far fa-circle session1"></i> 
+          <i class="far fa-circle session2"></i> 
+          <i class="far fa-circle session3"></i> 
+        </div>
+      </div>
+    </div>
+    <div class='container' id='diamond-container'>
+      <div class="diamond" id='top-diamond'></div>
+      <div class="diamond" id='bottom-diamond'></div>
+    </div>
+  <footer id="footer">Pomodoro Timer by <a href='https://github.com/andrewjh271'></a> and 
+    <a href='https://github.com/aaron-contreras'></a></footer>
+  </main>
+
+</body>
+<script type='text/javascript' src='script.js'></script>
+</html>
